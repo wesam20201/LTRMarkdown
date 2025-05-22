@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LTR Markdown Editor</title>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/pure/pure.0.5.0.css" />
+  <link rel="stylesheet" href="app/css/style.css" />
+
+  <style>
+    /* Force LTR direction and left text alignment */
+    #editor, #textbox textarea, #output {
+      direction: ltr !important;
+      text-align: left !important;
+    }
+  </style>
+</head>
+<body>
+  <div id="header">
+    <h1 id="sitename">LTR Markdown Editor</h1>
+    <p id="sitedescription">A fast simple left-to-right markdown editor</p>
+	<p>
+      With <span class="red">❤</span> by
+      <a>Wessam Adel</a>
+    </p>
+  </div>
+
+  <div id="tools"></div>
+
+<div id="editor">
+  <div id="textbox">
+    <textarea rows="20"></textarea>
+  </div>
+  <div id="output">
+    <!-- Rendered markdown here -->
+  </div>
+</div>
+
+
+  <!-- Scripts -->
+  <script src="assets/marked/marked.min.js"></script>
+  <script src="assets/jquery/dist/jquery.min.js"></script>
+  <script src="app/js/autogrow.js" type="text/javascript" charset="utf-8"></script>
+  <script src="app/js/ltrmd.js"></script>
+</body>
+</html>
