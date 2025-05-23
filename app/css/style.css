@@ -45,6 +45,6 @@ html, body {
   min-height: 73.55vh;            /* same as textarea for alignment */
   padding: 1rem;
   background: #fcfcfc;
-  border: 1px solid #ccc;
+  border: 0px solid #ccc;
   border-radius: 6px;
 }
